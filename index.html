@@ -192,6 +192,20 @@ nav a {
 <footer>
     © 2026 HJ++ Language — All Rights Reserved
 </footer>
+<script>
+    const elements = document.querySelectorAll('.scroll-anim');
 
+    function checkScroll() {
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                el.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('load', checkScroll);
+                </script>
 </body>
 </html>
