@@ -139,6 +139,18 @@ nav a {
             p { font-size: 0.95rem; }
             .hero-box { padding: 25px 18px; }
         }
+        /* حالت اولیه قبل از اسکرول */
+.scroll-anim {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+/* وقتی وارد دید کاربر می‌شود */
+.scroll-anim.show {
+    opacity: 1;
+    transform: translateY(0);
+}
     </style>
 </head>
 
