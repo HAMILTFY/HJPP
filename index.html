@@ -7,13 +7,14 @@
     <!-- Google Verification -->
     <meta name="google-site-verification" content="e1YAogHoLTLXSC7RxrCtV8QdvQ1V6yfcG-eFf-IvxII" />
 
+    <!-- مهم‌ترین خط برای موبایل -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- فونت فارسی -->
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
         body {
             margin: 0;
@@ -24,7 +25,6 @@
             background: linear-gradient(135deg, #0d47a1, #1565c0, #1e88e5);
             background-size: 300% 300%;
             animation: bgMove 12s ease infinite;
-
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -75,25 +75,10 @@
             opacity: 0.9;
         }
 
-        /* موبایل */
         @media (max-width: 480px) {
-            .container {
-                margin-top: 20px;
-                padding: 16px 10px 30px 10px;
-            }
-
-            .title-box {
-                padding: 20px 14px;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-                line-height: 2.1rem;
-            }
-
-            p {
-                font-size: 0.95rem;
-            }
+            h1 { font-size: 1.6rem; line-height: 2.1rem; }
+            p { font-size: 0.95rem; }
+            .title-box { padding: 20px 14px; }
         }
     </style>
 </head>
