@@ -7,10 +7,10 @@
     <!-- Google Verification -->
     <meta name="google-site-verification" content="e1YAogHoLTLXSC7RxrCtV8QdvQ1V6yfcG-eFf-IvxII" />
 
-    <!-- مهم‌ترین خط برای موبایل -->
+    <!-- Mobile Scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- فونت فارسی -->
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
@@ -20,14 +20,10 @@
             margin: 0;
             padding: 0;
             font-family: 'Vazirmatn', sans-serif;
-            color: white;
-            min-height: 100vh;
             background: linear-gradient(135deg, #0d47a1, #1565c0, #1e88e5);
             background-size: 300% 300%;
             animation: bgMove 12s ease infinite;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            color: white;
         }
 
         @keyframes bgMove {
@@ -36,21 +32,43 @@
             100% { background-position: 0% 50%; }
         }
 
-        .container {
+        /* Header */
+        header {
             width: 100%;
-            max-width: 700px;
-            padding: 20px 16px 40px 16px;
-            margin-top: 30px;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .title-box {
+        .logo {
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 20px;
+        }
+
+        .hero-box {
             background: rgba(255, 255, 255, 0.14);
-            border-radius: 18px;
-            padding: 24px 18px;
+            padding: 35px 25px;
+            border-radius: 20px;
             backdrop-filter: blur(14px);
             box-shadow: 0 0 25px rgba(0,0,0,0.25), 0 0 10px #2196f3;
-            text-align: center;
             animation: fadeIn 1s ease;
+            max-width: 700px;
+            margin: auto;
         }
 
         @keyframes fadeIn {
@@ -59,40 +77,109 @@
         }
 
         h1 {
-            font-size: 2rem;
-            margin: 0 0 10px 0;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
         }
 
         p {
-            margin: 6px 0;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             opacity: 0.95;
         }
 
-        .sub {
-            margin-top: 14px;
-            font-size: 0.95rem;
-            opacity: 0.9;
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2196f3;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
         }
 
+        .btn:hover {
+            background: #42a5f5;
+        }
+
+        /* Sections */
+        .section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section-box {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
+            border-radius: 18px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.8;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        /* Mobile */
         @media (max-width: 480px) {
-            h1 { font-size: 1.6rem; line-height: 2.1rem; }
+            h1 { font-size: 1.9rem; }
+            h2 { font-size: 1.5rem; }
             p { font-size: 0.95rem; }
-            .title-box { padding: 20px 14px; }
+            .hero-box { padding: 25px 18px; }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="title-box">
-            <h1>★ HJ++ Official Portal ★</h1>
-            <p>زبان برنامه‌نویسی سخت، فلسفی و اختصاصی</p>
-            <p>SihhTec • SIHH CODE • SIHH ENGINE • ™LTKROS</p>
-            <p class="sub">Official entry point to the HJ++ ecosystem.</p>
-        </div>
+<header>
+    <div class="logo">HJ++</div>
+    <nav>
+        <a href="#">خانه</a>
+        <a href="#">مستندات</a>
+        <a href="#">درباره</a>
+        <a href="#">اکوسیستم</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-box">
+        <h1>★ HJ++ Official Portal ★</h1>
+        <p>زبان برنامه‌نویسی سخت، فلسفی و اختصاصی</p>
+        <p>SihhTec • SIHH CODE • SIHH ENGINE • ™LTKROS</p>
+        <a class="btn" href="#">شروع کنید</a>
     </div>
+</section>
+
+<section class="section">
+    <div class="section-box">
+        <h2>HJ++ چیست؟</h2>
+        <p>HJ++ یک زبان برنامه‌نویسی سخت، فلسفی و مبتنی بر ساختارهای ذهنی است که برای توسعه‌دهندگان حرفه‌ای طراحی شده است.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-box">
+        <h2>اکوسیستم SIHH</h2>
+        <p>SIHH CODE، SIHH ENGINE و ™LTKROS سه ستون اصلی اکوسیستم HJ++ هستند که ابزارهای توسعه، اجرا و مدیریت پروژه را فراهم می‌کنند.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 HJ++ Language — All Rights Reserved
+</footer>
 
 </body>
 </html>
