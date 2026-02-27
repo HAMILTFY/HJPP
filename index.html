@@ -2,7 +2,7 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>★.HJ++ Official Site.★</title>
+    <title>HJ++ Official Portal</title>
 
     <!-- Google Verification -->
     <meta name="google-site-verification" content="e1YAogHoLTLXSC7RxrCtV8QdvQ1V6yfcG-eFf-IvxII" />
@@ -11,88 +11,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Vazirmatn', sans-serif;
-    color: white;
-    min-height: 100vh;
-    text-align: center;
+        * {
+            box-sizing: border-box;
+        }
 
-    background: linear-gradient(135deg, #0d47a1, #1565c0, #1e88e5);
-    background-size: 300% 300%;
-    animation: bgMove 12s ease infinite;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Vazirmatn', sans-serif;
+            color: white;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0d47a1, #1565c0, #1e88e5);
+            background-size: 300% 300%;
+            animation: bgMove 12s ease infinite;
 
-/* هدر */
-.header {
-    width: 100%;
-    padding: 12px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-/* جعبهٔ اصلی */
-.box {
-    background: rgba(255, 255, 255, 0.12);
-    padding: 25px 25px;
-    border-radius: 18px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 25px rgba(0,0,0,0.25), 0 0 10px #2196f3;
-    animation: fadeIn 1.2s ease;
-    margin-top: 110px;
-    width: 95%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
+        @keyframes bgMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-/* موبایل */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.6rem;
-        line-height: 2.2rem;
-    }
-    p {
-        font-size: 0.95rem;
-    }
-    .box {
-        padding: 20px;
-        width: 92%;
-        margin-top: 100px;
-    }
-    .nav a {
-        margin-left: 10px;
-        font-size: 0.85rem;
-    }
-}
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 20px 16px 40px 16px;
+            margin-top: 30px;
+        }
+
+        .title-box {
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 18px;
+            padding: 24px 18px;
+            backdrop-filter: blur(14px);
+            box-shadow: 0 0 25px rgba(0,0,0,0.25), 0 0 10px #2196f3;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            margin: 6px 0;
+            font-size: 1.05rem;
+            opacity: 0.95;
+        }
+
+        .sub {
+            margin-top: 14px;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* موبایل */
+        @media (max-width: 480px) {
+            .container {
+                margin-top: 20px;
+                padding: 16px 10px 30px 10px;
+            }
+
+            .title-box {
+                padding: 20px 14px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+                line-height: 2.1rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- هدر -->
-    <header class="header">
-        <div class="logo">HJ++</div>
-        <nav class="nav">
-            <a href="#">Home</a>
-            <a href="#">Docs</a>
-            <a href="#">About</a>
-            <a href="#">Ecosystem</a>
-        </nav>
-    </header>
-
-    <!-- محتوای اصلی -->
-    <div class="box">
-        <h1>★ HJ++ Official Portal ★</h1>
-        <p>زبان برنامه‌نویسی سخت، فلسفی و اختصاصی</p>
-        <p>SihhTec • SIHH CODE • SIHH ENGINE • ™LTKROS</p>
+    <div class="container">
+        <div class="title-box">
+            <h1>★ HJ++ Official Portal ★</h1>
+            <p>زبان برنامه‌نویسی سخت، فلسفی و اختصاصی</p>
+            <p>SihhTec • SIHH CODE • SIHH ENGINE • ™LTKROS</p>
+            <p class="sub">Official entry point to the HJ++ ecosystem.</p>
+        </div>
     </div>
 
 </body>
